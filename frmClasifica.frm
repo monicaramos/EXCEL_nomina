@@ -13,92 +13,6 @@ Begin VB.Form frmClasifica
    ScaleHeight     =   2445
    ScaleWidth      =   7380
    StartUpPosition =   2  'CenterScreen
-   Begin VB.Frame FrameImportar 
-      BorderStyle     =   0  'None
-      Height          =   2415
-      Left            =   0
-      TabIndex        =   5
-      Top             =   0
-      Width           =   7335
-      Begin VB.TextBox Text4 
-         Height          =   315
-         Left            =   150
-         TabIndex        =   7
-         Top             =   1380
-         Width           =   1095
-      End
-      Begin VB.TextBox Text7 
-         Height          =   315
-         Left            =   1530
-         MaxLength       =   30
-         TabIndex        =   8
-         Top             =   1380
-         Width           =   5385
-      End
-      Begin VB.CommandButton Command3 
-         Caption         =   "&Salir"
-         Height          =   375
-         Left            =   5760
-         TabIndex        =   10
-         Top             =   1920
-         Width           =   1095
-      End
-      Begin VB.CommandButton Command2 
-         Caption         =   "&Importar"
-         Height          =   375
-         Left            =   4500
-         TabIndex        =   9
-         Top             =   1920
-         Width           =   1095
-      End
-      Begin VB.TextBox Text5 
-         Height          =   315
-         Left            =   180
-         TabIndex        =   6
-         Top             =   690
-         Width           =   6735
-      End
-      Begin VB.Image imgFecha 
-         Height          =   240
-         Index           =   15
-         Left            =   960
-         Picture         =   "frmClasifica.frx":1782
-         Top             =   1110
-         Width           =   240
-      End
-      Begin VB.Label Label4 
-         Caption         =   "Fecha"
-         Height          =   195
-         Left            =   150
-         TabIndex        =   26
-         Top             =   1140
-         Width           =   615
-      End
-      Begin VB.Label Label6 
-         Caption         =   "Concepto"
-         Height          =   195
-         Left            =   1530
-         TabIndex        =   25
-         Top             =   1140
-         Width           =   1095
-      End
-      Begin VB.Label Label1 
-         Caption         =   "Fichero"
-         Height          =   195
-         Index           =   1
-         Left            =   180
-         TabIndex        =   11
-         Top             =   450
-         Width           =   615
-      End
-      Begin VB.Image Image3 
-         Height          =   240
-         Left            =   900
-         Picture         =   "frmClasifica.frx":180D
-         Top             =   420
-         Width           =   240
-      End
-   End
    Begin VB.Frame FrameCompletar 
       BorderStyle     =   0  'None
       Height          =   2415
@@ -155,7 +69,7 @@ Begin VB.Form frmClasifica
       Begin VB.Image Image4 
          Height          =   240
          Left            =   1350
-         Picture         =   "frmClasifica.frx":190F
+         Picture         =   "frmClasifica.frx":1782
          Top             =   120
          Width           =   240
       End
@@ -171,7 +85,7 @@ Begin VB.Form frmClasifica
       Begin VB.Image Image1 
          Height          =   240
          Left            =   1530
-         Picture         =   "frmClasifica.frx":1A11
+         Picture         =   "frmClasifica.frx":1884
          Top             =   810
          Width           =   240
       End
@@ -182,74 +96,6 @@ Begin VB.Form frmClasifica
          TabIndex        =   33
          Top             =   810
          Width           =   1395
-      End
-   End
-   Begin MSComDlg.CommonDialog CommonDialog1 
-      Left            =   7260
-      Top             =   1620
-      _ExtentX        =   847
-      _ExtentY        =   847
-      _Version        =   393216
-   End
-   Begin VB.Frame FrameEscribir 
-      BorderStyle     =   0  'None
-      Height          =   2415
-      Left            =   0
-      TabIndex        =   0
-      Top             =   0
-      Width           =   7395
-      Begin ComctlLib.ProgressBar Pb1 
-         Height          =   195
-         Left            =   90
-         TabIndex        =   24
-         Top             =   1170
-         Visible         =   0   'False
-         Width           =   7155
-         _ExtentX        =   12621
-         _ExtentY        =   344
-         _Version        =   327682
-         Appearance      =   1
-      End
-      Begin VB.TextBox Text2 
-         Height          =   315
-         Left            =   90
-         TabIndex        =   3
-         Text            =   "Text1"
-         Top             =   690
-         Width           =   7155
-      End
-      Begin VB.CommandButton Command1 
-         Caption         =   "&Aceptar"
-         Height          =   375
-         Index           =   0
-         Left            =   4920
-         TabIndex        =   2
-         Top             =   1800
-         Width           =   1035
-      End
-      Begin VB.CommandButton Command1 
-         Caption         =   "&Salir"
-         Height          =   375
-         Index           =   1
-         Left            =   6120
-         TabIndex        =   1
-         Top             =   1800
-         Width           =   1035
-      End
-      Begin VB.Label Label2 
-         Caption         =   "Fichero generado"
-         Height          =   195
-         Left            =   90
-         TabIndex        =   4
-         Top             =   450
-         Width           =   1395
-      End
-      Begin VB.Image Image2 
-         Height          =   240
-         Left            =   1530
-         Picture         =   "frmClasifica.frx":1B13
-         Top             =   450
-         Width           =   240
       End
    End
    Begin VB.Frame FrameConfig 
@@ -410,6 +256,160 @@ Begin VB.Form frmClasifica
          Top             =   1350
          Width           =   825
       End
+   End
+   Begin VB.Frame FrameImportar 
+      BorderStyle     =   0  'None
+      Height          =   2415
+      Left            =   0
+      TabIndex        =   5
+      Top             =   0
+      Width           =   7335
+      Begin VB.TextBox Text4 
+         Height          =   315
+         Left            =   150
+         TabIndex        =   7
+         Top             =   1380
+         Width           =   1095
+      End
+      Begin VB.TextBox Text7 
+         Height          =   315
+         Left            =   1530
+         MaxLength       =   30
+         TabIndex        =   8
+         Top             =   1380
+         Width           =   5385
+      End
+      Begin VB.CommandButton Command3 
+         Caption         =   "&Salir"
+         Height          =   375
+         Left            =   5760
+         TabIndex        =   10
+         Top             =   1920
+         Width           =   1095
+      End
+      Begin VB.CommandButton Command2 
+         Caption         =   "&Importar"
+         Height          =   375
+         Left            =   4500
+         TabIndex        =   9
+         Top             =   1920
+         Width           =   1095
+      End
+      Begin VB.TextBox Text5 
+         Height          =   315
+         Left            =   180
+         TabIndex        =   6
+         Top             =   690
+         Width           =   6735
+      End
+      Begin VB.Image imgFecha 
+         Height          =   240
+         Index           =   15
+         Left            =   960
+         Picture         =   "frmClasifica.frx":1986
+         Top             =   1110
+         Width           =   240
+      End
+      Begin VB.Label Label4 
+         Caption         =   "Fecha"
+         Height          =   195
+         Left            =   150
+         TabIndex        =   26
+         Top             =   1140
+         Width           =   615
+      End
+      Begin VB.Label Label6 
+         Caption         =   "Concepto"
+         Height          =   195
+         Left            =   1530
+         TabIndex        =   25
+         Top             =   1140
+         Width           =   1095
+      End
+      Begin VB.Label Label1 
+         Caption         =   "Fichero"
+         Height          =   195
+         Index           =   1
+         Left            =   180
+         TabIndex        =   11
+         Top             =   450
+         Width           =   615
+      End
+      Begin VB.Image Image3 
+         Height          =   240
+         Left            =   900
+         Picture         =   "frmClasifica.frx":1A11
+         Top             =   420
+         Width           =   240
+      End
+   End
+   Begin VB.Frame FrameEscribir 
+      BorderStyle     =   0  'None
+      Height          =   2415
+      Left            =   0
+      TabIndex        =   0
+      Top             =   0
+      Width           =   7395
+      Begin ComctlLib.ProgressBar Pb1 
+         Height          =   195
+         Left            =   90
+         TabIndex        =   24
+         Top             =   1170
+         Visible         =   0   'False
+         Width           =   7155
+         _ExtentX        =   12621
+         _ExtentY        =   344
+         _Version        =   327682
+         Appearance      =   1
+      End
+      Begin VB.TextBox Text2 
+         Height          =   315
+         Left            =   90
+         TabIndex        =   3
+         Text            =   "Text1"
+         Top             =   690
+         Width           =   7155
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "&Aceptar"
+         Height          =   375
+         Index           =   0
+         Left            =   4920
+         TabIndex        =   2
+         Top             =   1800
+         Width           =   1035
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "&Salir"
+         Height          =   375
+         Index           =   1
+         Left            =   6120
+         TabIndex        =   1
+         Top             =   1800
+         Width           =   1035
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Fichero generado"
+         Height          =   195
+         Left            =   90
+         TabIndex        =   4
+         Top             =   450
+         Width           =   1395
+      End
+      Begin VB.Image Image2 
+         Height          =   240
+         Left            =   1530
+         Picture         =   "frmClasifica.frx":1B13
+         Top             =   450
+         Width           =   240
+      End
+   End
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   7260
+      Top             =   1620
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
    End
 End
 Attribute VB_Name = "frmClasifica"

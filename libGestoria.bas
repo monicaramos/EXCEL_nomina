@@ -42,6 +42,7 @@ End If
 NombreHoja = Command '"/I ariagro1"
 'NombreHoja = "/I|ariagro4|22000|" '"/P|ariagro4|22000|"
 
+
 I = InStr(1, NombreHoja, "/")
 If I = 0 Then
     MsgBox "Mal lanzado el programa", vbExclamation
